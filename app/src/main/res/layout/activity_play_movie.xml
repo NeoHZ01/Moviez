@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayMovieActivity"
+    android:background="#263238">
+
+    <ImageView
+        android:id="@+id/imgCoverArt"
+        android:layout_width="135dp"
+        android:layout_height="204dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/movieicon" />
+
+    <TextView
+        android:id="@+id/txtMovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Movie Title"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCoverArt" />
+
+    <TextView
+        android:id="@+id/txtCasts"
+        android:layout_width="154dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="68dp"
+        android:text="Casts"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="goNext"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:onClick="goPrevious"
+        android:text="Previous"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="188dp"
+        android:background="@android:color/transparent"
+        android:onClick="next"
+        android:text="PLAY"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSynopsis"
+        android:layout_width="213dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="164dp"
+        android:text="synopsis"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/imgCoverArt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:text="Actors:"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/imgCoverArt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="204dp"
+        android:text="Movie Trailer:"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="232dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="92dp"
+        android:layout_marginStart="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="116dp"
+        android:text="Ratings:"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="71dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/transparent"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/rating_display_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="32dp"
+        android:text="Your rating will appear here"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="168dp"
+        android:text="Movie Soundtrack:"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlayPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginBottom="148dp"
+        android:background="@android:color/transparent"
+        android:onClick="playOrPauseMusic"
+        android:text="PLAY"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="280dp"
+        android:text="Reviews:"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtReview"
+        android:layout_width="236dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="268dp"
+        android:text="review"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

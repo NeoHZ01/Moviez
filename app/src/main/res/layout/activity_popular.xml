@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Popular"
+    android:background="#263238">
+
+    <ImageButton
+        android:id="@+id/S1002"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:onClick="handleSelection"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/S1001"
+        app:srcCompat="@drawable/jl" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Justice League"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/S1002"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Action, Adventure, Fantasy"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/S1002"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Superhero, Science fiction"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/S1002"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Ratings: 6.6/10"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/S1002"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageButton
+        android:id="@+id/S1001"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:onClick="handleSelection"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dunkirk" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Dunkirk"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/S1001"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Action, Adventure, Historical period"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/S1001"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="War, Drama, Thriller, Historical fiction"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/S1001"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Ratings: 8/10"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/S1001"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <ImageButton
+        android:id="@+id/S1003"
+        android:layout_width="140dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:onClick="handleSelection"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/S1002"
+        app:srcCompat="@drawable/logan" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Logan"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/S1003"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Action, Drama, Sci-fi, Thriller"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/S1003"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Ratings: 8.1/10"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/S1003"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="411dp"
+        android:layout_height="39dp"
+        android:background="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="28dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="56dp"
+        android:background="@android:color/transparent"
+        android:onClick="NEXTPAGE"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="28dp"
+        android:layout_height="33dp"
+        android:background="@android:color/transparent"
+        android:onClick="NextPage"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton17"
+        app:layout_constraintStart_toEndOf="@+id/imageButton15"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:srcCompat="@drawable/house" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="28dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="56dp"
+        android:background="@android:color/transparent"
+        android:onClick="nextpage"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:srcCompat="@drawable/human" />
+
+</android.support.constraint.ConstraintLayout>
